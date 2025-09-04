@@ -1,0 +1,24 @@
+{
+  "name": "PotholeAI - Gurugram Infrastructure Monitor",
+  "short_name": "PotholeAI",
+  "description": "Crowdsourced pothole reporting and tracking for Gurugram. Tag @potholeai or report directly to improve our roads.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#f97316",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["government", "utilities", "productivity"],
+  "lang": "en-US",
+  "orientation": "portrait-primary"
+}
