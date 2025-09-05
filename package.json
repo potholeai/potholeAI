@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
+    "start": "npx vite preview --host 0.0.0.0 --port ${PORT:-4173}",
     "dev": "npx vite",
     "build": "npx vite build",
     "preview": "npx vite preview"
