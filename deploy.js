@@ -26,14 +26,14 @@ async function main() {
     const factory = new ethers.ContractFactory(abi, bytecode, wallet);
 
     // Set your desired initial supply. For example, 1000 tokens (with 18 decimals).
-    // Note: ethers v6 uses `parseUnits` from ethers for conversion.
+
     const initialSupply = ethers.parseUnits("1000", 18);
 
     // Deploy the contract.
     const contract = await factory.deploy(initialSupply);
     console.log("Waiting for the contract deployment transaction to be mined...");
     await contract.waitForDeployment();
-    console.log(`Contract deployed at: https://sepolia.basescan.org/address/${contract.target}`)
+
 }
 
 main().catch((error) => {

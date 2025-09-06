@@ -50,17 +50,16 @@ async function compileContract() {
 
             // Write ABI to a JSON file
             await fs.writeFile(
-                path.resolve(__dirname, `${contractName}ABI.json`),
+                path.resolve(__dirname, contractName + ABI.json),
                 JSON.stringify(abi, null, 2)
             );
 
             // Write bytecode to a text file
             await fs.writeFile(
-                path.resolve(__dirname, `${contractName}Bytecode.txt`),
+                path.resolve(__dirname, contractName + Bytecode.txt),
                 bytecode
             );
 
-            console.log(`Compiled ${contractName}: ABI and Bytecode generated.`);
         }
     } catch (error) {
         console.error('Failed to read contract or compile:', error);
